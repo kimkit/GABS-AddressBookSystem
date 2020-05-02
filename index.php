@@ -163,7 +163,8 @@ $(document).ready(function(){
                   var dataCache = table1Data[id][key];
                   for(k in name){  // 匹配度计算
                     if(dataCache !=null){
-                      var piPei = dataCache.toUpperCase().indexOf(name[k].toUpperCase());  //转大写，匹配大小写
+                      // var piPei = dataCache.toUpperCase().indexOf(name[k].toUpperCase());  //转大写，匹配大小写
+                      var piPei = dataCache.toUpperCase().indexOf(name.toUpperCase());  //转大写，匹配大小写
                       if(piPei!=-1){
                         piPeiDu += 1;
                         dataCache = dataCache.slice(piPei+1);
@@ -171,7 +172,8 @@ $(document).ready(function(){
                     }
                   }
                 }
-                if(piPeiDu == name.length){  // 如果匹配查询
+                // if(piPeiDu == name.length){  // 如果匹配查询
+                if(piPeiDu > 0){  // 如果匹配查询
                   $('.layui-table-body tr[data-index="'+index+'"]').show();  //此行显示
                 }
               }

@@ -80,6 +80,8 @@ class list_class
           $data[$j]['GONG_SI'] = $res[$i]['NEI_RONG'];  //返回公司
       } elseif ($res[$i]['XIANG_MU'] == '备注') {
           $data[$j]['BEI_ZHU'] = $res[$i]['NEI_RONG'];  //返回备注
+      } else {
+          $data[$j]['QI_TA_'.$res[$i]['XIANG_MU']] = $res[$i]['NEI_RONG']; //其他项目
       }
         }
 

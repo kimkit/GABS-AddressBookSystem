@@ -10,7 +10,7 @@ function DbOpen()
 {
     $host = '127.0.0.1';
     $db_user = 'root';
-    $db_pass = 'root';
+    $db_pass = '123456';
     $db_name = 'gabs';
     $timezone = 'Asia/Beijing';
     $setutf8 = 'SET NAMES utf8';
