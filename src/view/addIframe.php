@@ -4,6 +4,7 @@ session_start();
 <script type="text/javascript" src="<?php $_SERVER['DOCUMENT_ROOT']?>/src/js/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="<?php $_SERVER['DOCUMENT_ROOT']?>/src/js/layui/layui.js"></script>
 <script type="text/javascript" src="<?php $_SERVER['DOCUMENT_ROOT']?>/src/js/common.js"></script>
+<script type="text/javascript" src="<?php $_SERVER['DOCUMENT_ROOT']?>/src/js/simple-watermark.js"></script>
 <script type="text/javascript" src="<?php $_SERVER['DOCUMENT_ROOT']?>/src/js/pinyin.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php $_SERVER['DOCUMENT_ROOT']?>/src/js/layui/css/layui.css"/>
 <link rel="stylesheet" type="text/css" href="<?php $_SERVER['DOCUMENT_ROOT']?>/src/view/addIframe.css"/>
@@ -259,5 +260,9 @@ $('input[name="姓名"]').bind('input propertychange', function() {
   
 });
 
+    new Watermark({
+      fillStyle: 'rgba(184, 184, 184, .4)',
+      fillText: '<?php echo $_SESSION['USER_NAME']; ?>',
+    });
 
 </script>

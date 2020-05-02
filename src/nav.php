@@ -14,6 +14,7 @@ require_once dirname(__FILE__).'/common/path.php';    //获取路径设置
   <script src="<?php $rootpath?>/src/js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="<?php $rootpath ?>/src/js/layui/layui.js"></script>
   <script src="<?php $rootpath ?>/src/js/common.js"></script>
+  <script src="<?php $rootpath ?>/src/js/simple-watermark.js"></script>
   
 	<link rel="stylesheet" type="text/css" href="<?php $rootpath ?>/src/js/layui/css/layui.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php $rootpath ?>/src/css/custom.css"/>

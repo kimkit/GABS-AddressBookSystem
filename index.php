@@ -37,7 +37,7 @@ require_once dirname(__FILE__).'/src/nav.php';
     </div>
   </div>
   <div class="layui-row">
-    <div class="area1">
+    <div class="area1" id="wm1">
       <div class="layui-progress jindutiao" lay-filter="jindutiao">
         <div class="layui-progress-bar layui-bg-blue" lay-percent="0%"></div>
       </div>
@@ -92,6 +92,13 @@ $(document).ready(function(){
     }
     //页面首次打开自动加载表格
     initTable('');
+    //https://github.com/LeeRayno/simple-watermark
+    new Watermark({
+      el: document.getElementById('wm1'),
+      position: 'absolute',
+      fillStyle: 'rgba(184, 184, 184, .4)',
+      fillText: '<?php echo $_SESSION['USER_NAME']; ?>',
+    });
     
     var table1;
     var table1Data;
