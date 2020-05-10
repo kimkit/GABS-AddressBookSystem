@@ -80,6 +80,12 @@ session_start();
             <input type="radio" name="性别" value="" title="未知" checked data-lang="未知">
           </div>
       </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label"><span lang="身份证号码"></span></label>
+        <div class="layui-input-inline">
+          <input type="text" name="身份证号码" required lay-verify="required" placeholder="" value="" autocomplete="off" class="layui-input">
+        </div>
+      </div>
       <div class="JS-showAddItem"></div>
       <div class="layui-form-item">
         <div class="layui-btn" id="addInfo"><span class="layui-icon">&#xe654;</span><span lang="增加条目"></span></div>
@@ -149,6 +155,8 @@ layui.use('form', function(){
             }else if(res.data[i].XIANG_MU == '性别'){
               $('input[name="性别"][value='+res.data[i].NEI_RONG+']').attr("checked",true);  //显示性别
               form.render('radio');
+            }else if(res.data[i].XIANG_MU == '身份证号码'){
+              $('input[name="身份证号码"]').val(res.data[i].NEI_RONG);  //显示身份证号码
             }else{
               infoHtml = '<div class="layui-form-item addItem">'+
                            '<label class="layui-form-label">'+
@@ -242,7 +250,7 @@ layui.use('form', function(){
   
   //保存按钮点击事件
   $('body').on('click', '#save', function(){
-    if($('input[name="姓名"]').val()!=''&&$('input[name="拼音"]').val()!=''){
+    if($('input[name="姓名"]').val()!=''&&$('input[name="拼音"]').val()!=''&&$('input[name="身份证号码"]').val()!=''){
       action = 'BaoCun';
       formData = $('.layui-form').serialize();
       ajax = $.ajax({

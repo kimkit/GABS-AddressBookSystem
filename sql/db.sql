@@ -261,6 +261,8 @@ INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES 
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('index', 'EN', '批量管理', 'Batch manage');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'CN', '性别', '性别');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'EN', '性别', 'Sex');
+INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'CN', '身份证号码', '身份证号码');
+INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'EN', '身份证号码', 'ID No.');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'CN', '增加条目', '增加条目');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'EN', '增加条目', 'Add information');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('addIframe', 'CN', '男', '男');
@@ -299,6 +301,8 @@ INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES 
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'EN', '未知', 'No');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'CN', '性别', '性别');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'EN', '性别', 'Sex');
+INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'CN', '身份证号码', '身份证号码');
+INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'EN', '身份证号码', 'ID No.');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'CN', '删除', '删除');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'EN', '删除', 'Delete');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('editIframe', 'CN', '所有人', '所有人');
@@ -371,6 +375,8 @@ INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES 
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'EN', '备注', 'Remark');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'CN', '性别', '性别');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'EN', '性别', 'Sex');
+INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'CN', '身份证号码', '身份证号码');
+INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'EN', '身份证号码', 'ID No.');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'CN', '拼音', '拼音');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'EN', '拼音', 'Nickname');
 INSERT INTO `txl_yuyan` (`YE_MIAN_MING`, `YU_ZHONG`, `XU_HAO`, `WEN_ZI`) VALUES ('piLiang', 'CN', '组', '组');

@@ -123,7 +123,7 @@ class list_class
             $_SESSION['USER_ID'] = 'admin';
         } else {
             //生成1个GUID
-            $GUID = getGUID();
+            $GUID = getGUID(isset($formRes['身份证号码']) ? $formRes['身份证号码'] : '');
             $GUID = str_replace('{', '', $GUID);
             $GUID = str_replace('}', '', $GUID);
         }

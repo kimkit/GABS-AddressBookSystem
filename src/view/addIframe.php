@@ -81,6 +81,12 @@ session_start();
           </div>
       </div>
       <div class="layui-form-item">
+        <label class="layui-form-label"><span lang="身份证号码"></span></label>
+        <div class="layui-input-inline">
+          <input type="text" name="身份证号码" required lay-verify="required" placeholder="" value="" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
         <div class="layui-btn" id="addInfo"><span class="layui-icon">&#xe654;</span><span lang="增加条目"></span></div>
       </div>
     </div>
@@ -160,7 +166,7 @@ layui.use('form', function(){
 
 //添加按钮点击事件
 $('#add').click(function(){
-  if($('input[name="姓名"]').val()!=''&&$('input[name="拼音"]').val()!=''){
+  if($('input[name="姓名"]').val()!=''&&$('input[name="拼音"]').val()!=''&&$('input[name="身份证号码"]').val()!=''){
     action = 'TianJia';
     formData = $('.layui-form').serialize();
     ajax = $.ajax({
@@ -178,6 +184,8 @@ $('#add').click(function(){
         loadingDiv();
         if(res=='ok'){
           parent.layer.msg('添加成功');
+        } else {
+          parent.layer.msg('添加失败 - '+res);
         }
         //当你在iframe页面关闭自身时
         var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引

@@ -90,8 +90,21 @@ aghcf19hRYU=
 }
 
 //兼容linux生成GUID的方法
-function getGUID()
+function getGUID($id = '')
 {
+    if (strlen($id) > 0) {
+        $salt = 'Xy71dPXUsV6eTn1K';
+        $charid = strtoupper(md5($salt.$id.$salt));
+        $hyphen = chr(45); // "-"
+        $uuid = chr(123)// "{"
+            .substr($charid, 0, 8).$hyphen
+            .substr($charid, 8, 4).$hyphen
+            .substr($charid, 12, 4).$hyphen
+            .substr($charid, 16, 4).$hyphen
+            .substr($charid, 20, 12)
+            .chr(125); // "}"
+        return $uuid;
+    }
     if (function_exists('com_create_guid')) {
         return com_create_guid();
     } else {

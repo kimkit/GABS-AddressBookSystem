@@ -125,7 +125,7 @@ layui.use('table', function(){
               if(res=='ok'){
                 layer.msg('导入成功 | Success');
               }else if(res=='notok'){
-                layer.msg('姓名不能为空 | Name is empty');
+                layer.msg('姓名或身份证号码不能为空 | Name or ID is empty');
               }
             }
             
